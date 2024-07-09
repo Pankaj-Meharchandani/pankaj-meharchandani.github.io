@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Project 1 - Responsive Web Design</title>
+    <meta name="keywords" content="Responsive Web Design, Project, Pankaj Meharchandani">
+    <meta name="description" content="Details of the Responsive Web Design project by Pankaj Meharchandani.">
+    <meta name="author" content="Pankaj Meharchandani">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="icon" href="images/pfav1.png" type="image/png">
+</head>
+<body>
+<div id="fullpage">
+    <!-- start project detail -->
+    <div id="project1" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 wow fadeIn" data-wow-delay="0.9s">
+                    <h1>Responsive Web Design</h1>
+                    <h3>Project Details</h3>
+                    <p>This project involves designing a responsive web application that adjusts seamlessly to various screen sizes and devices. The goal was to create a user-friendly and accessible interface that enhances user experience on mobile, tablet, and desktop platforms.</p>
+                    
+                    <h3>Technologies Used</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                    
+                    <h3>Project Features</h3>
+                    <ul>
+                        <li>Mobile-first design</li>
+                        <li>Cross-browser compatibility</li>
+                        <li>Optimized for performance</li>
+                        <li>Intuitive navigation</li>
+                    </ul>
+                    
+                    <h3>Image Slider</h3>
+                    <div class="slider-for">
+                        <div><img src="images/portfolio-img1.jpg" class="img-responsive" alt="portfolio img1"></div>
+                        <div><img src="images/portfolio-img2.jpg" class="img-responsive" alt="portfolio img2"></div>
+                        <div><img src="images/portfolio-img3.jpg" class="img-responsive" alt="portfolio img3"></div>
+                    </div>
+                    <div class="slider-nav">
+                        <div><img src="images/portfolio-img1.jpg" class="img-responsive" alt="portfolio img1"></div>
+                        <div><img src="images/portfolio-img2.jpg" class="img-responsive" alt="portfolio img2"></div>
+                        <div><img src="images/portfolio-img3.jpg" class="img-responsive" alt="portfolio img3"></div>
+                    </div>
+                    
+                    <a href="index.html" class="btn btn-default smoothScroll wow fadeInUp" data-wow-delay="1s">Back to Home</a>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end project detail -->
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fullPage.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.simple-text-rotator.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/custom.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            fade: false,
+            asNavFor: '.slider-nav',
+            adaptiveHeight: true
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: true,
+            centerMode: true,
+            focusOnSelect: true
+        });
+    });
+</script>
+</body>
+</html>

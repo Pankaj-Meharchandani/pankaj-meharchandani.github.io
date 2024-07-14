@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Project 1 - Responsive Web Design</title>
+    <meta name="keywords" content="Responsive Web Design, Project, Pankaj Meharchandani">
+    <meta name="description" content="Details of the Responsive Web Design project by Pankaj Meharchandani.">
+    <meta name="author" content="Pankaj Meharchandani">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="icon" href="images/pfav1.png" type="image/png">
+    <style>
+        
+        .section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .gallery-container {
+            padding: 60px 0;
+        }
+        
+        .gallery-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #adadad;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .slider-for img, .slider-nav .nav-slide img {
+            width: 100%;
+            border-radius: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .slider-for img:hover, .slider-nav .nav-slide img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .slider-for {
+            position: relative;
+            overflow: hidden;
+            height: 400px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .gallery-image {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain; /* Adjust to 'cover' if you prefer images to cover the entire container */
+            transition: opacity 0.5s, transform 0.5s;
+            opacity: 0;
+            position: relative;
+        }
+        
+        .gallery-image.active {
+            opacity: 1;
+        }
+        .slider-for img {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            opacity: 0;
+            transition: left 0.5s, opacity 0.5s;
+        }
+        
+        .slider-for img.active {
+            left: 0;
+            opacity: 1;
+        }
+        
+        .slider-nav {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .nav-slide {
+            cursor: pointer;
+            border-radius: 15px;
+            overflow: hidden;
+            width: 100px;
+            height: 70px;
+        }
+        
+        .nav-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .nav-slide.active img {
+            border: 3px solid #ff4081;
+        }
+        
+        /* animations */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+        
+        .wow.bounce {
+            animation: bounce 2s;
+        }
+        
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            .gallery-title {
+                font-size: 2em;
+            }
+        
+            .slider-nav {
+                gap: 5px;
+            }
+        
+            .nav-slide {
+                width: 70px;
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="fullpage">
+    <!-- start header -->
+    <header class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 wow fadeIn" data-wow-delay="0.9s">
+                    <h1>Project 1: Responsive Web Design</h1>
+                    <p>Details of the project and its key features.</p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start details -->
+    <div id="details" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 wow bounce">
+                    <h2>Project Details</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.9s">
+                    <h4>Project Description</h4>
+                    <p>This project involves designing and developing a responsive web application that ensures a smooth and consistent user experience across all devices and screen sizes. The primary focus is on a mobile-first approach, optimizing performance, and creating an intuitive interface.</p>
+                </div>
+                <div class="col-md-6 col-xs-12 wow fadeInRight" data-wow-delay="0.9s">
+                    <span>HTML5 <small>90%</small></span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                    </div>
+                    <span>CSS3 <small>85%</small></span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+                    </div>
+                    <span>JavaScript <small>80%</small></span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                    </div>
+                    <span>Bootstrap <small>75%</small></span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end details -->
+
+    <!-- start process -->
+    <div id="process" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 wow bounce">
+                    <h2>Development Process</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 wow fadeIn" data-wow-delay="0.6s">
+                    <p>The development process for this project involved several key steps:</p>
+                    <ol>
+                        <li><strong>Research & Planning:</strong> Understanding user needs and defining project requirements.</li>
+                        <li><strong>Design:</strong> Creating wireframes and mockups, focusing on a mobile-first approach.</li>
+                        <li><strong>Development:</strong> Implementing the design using HTML5, CSS3, JavaScript, and Bootstrap.</li>
+                        <li><strong>Testing:</strong> Conducting usability tests and optimizing for different devices and browsers.</li>
+                        <li><strong>Deployment:</strong> Deploying the project to a live server and monitoring performance.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end process -->
+
+    <!-- start features -->
+    <div id="features" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 wow bounce">
+                    <h2>Key Features</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="media">
+                        <div class="media-left">
+                            <i class="fa fa-laptop"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Responsive Design</h3>
+                            <p>Ensures the website is fully responsive, adapting seamlessly to any device size or resolution.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="media">
+                        <div class="media-left">
+                            <i class="fa fa-link"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">UI/UX Design</h3>
+                            <p>Focuses on creating an intuitive user interface and enhancing user experience through thoughtful design.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="media">
+                        <div class="media-left">
+                            <i class="fa fa-code"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Modern Technologies</h3>
+                            <p>Utilizes the latest web technologies like HTML5, CSS3, JavaScript, and Bootstrap for development.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end features -->
+
+  <!-- start gallery -->
+<div id="gallery" class="gallery-container section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 wow bounce">
+                <h2 class="gallery-title">Project Gallery</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="slider-for">
+                    <img src="images/portfolio-img1.jpg" alt="Project Image 1" class="gallery-image">
+                    <img src="images/portfolio-img2.jpg" alt="Project Image 2" class="gallery-image">
+                    <img src="images/portfolio-img3.jpg" alt="Project Image 3" class="gallery-image">
+                </div>
+                <div class="slider-nav">
+                    <div class="nav-slide" data-index="0"><img src="images/portfolio-img1.jpg" alt="Project Image 1" class="thumb-image"></div>
+                    <div class="nav-slide" data-index="1"><img src="images/portfolio-img2.jpg" alt="Project Image 2" class="thumb-image"></div>
+                    <div class="nav-slide" data-index="2"><img src="images/portfolio-img3.jpg" alt="Project Image 3" class="thumb-image"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end gallery -->
+    
+    <!-- start contact -->
+    <div id="contact" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <address>
+                        <p class="contact-title">CONTACT ME</p>
+                        <p><i class="fa fa-phone"></i><a href="tel:+917000221437" target="_blank">+91-7000221437</a></p>
+                        <p><i class="fa fa-envelope-o"></i> <a href="mailto:pankajmeharchandani@gmail.com" target="_blank">pankajmeharchandani@gmail.com</a></p>
+                        <p><i class="fa fa-linkedin"></i> <a href="https://linkedin.com/in/pankaj-meharchandani-2679b71b8" target="_blank">pankaj-meharchandani-2679b71b8</a></p>
+                    </address>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-10 wow fadeInUp" data-wow-delay="0.6s">
+                    <form role="form" method="post" action="#">
+                        <input name="name" type="text" class="form-control" id="name" placeholder="Your Name">
+                        <input name="email" type="email" class="form-control" id="email" placeholder="Your Email">
+                        <textarea name="message" rows="5" class="form-control" id="message" placeholder="Your Message"></textarea>
+                        <input name="send" type="submit" class="form-control" id="send" value="SEND ME">
+                    </form>
+                </div>
+                <div class="col-md-1 col-sm-1"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end contact -->
+
+   <!-- start footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 wow fadeIn" data-wow-delay="0.9s">
+                <p>&copy; 2024 Pankaj Meharchandani</p>
+                <hr>
+                <ul class="social-icon">
+                    <li><a href="https://www.behance.net/pankajmeharch?log_shim_removal=1" class="fa fa-behance"></a></li>
+                    <li><a href="https://www.linkedin.com/in/pankaj-meharchandani-2679b71b8/" class="fa fa-linkedin"></a></li>
+                    <li><a href="https://pankajmeharchandani.myportfolio.com/" class="fa fa-briefcase"></a></li>
+                    <li><a href="https://www.figma.com/@pankaj_m" class="fa fa-figma"></a></li>
+                    <li><a href="https://dribbble.com/Killmonger_007" class="fa fa-dribbble"></a></li>
+                    <li><a href="https://github.com/Pankaj-Meharchandani" class="fa fa-github"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end footer -->
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fullPage.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/custom.js"></script>
+<script>
+    $(document).ready(function() {
+        new WOW().init();
+
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            fade: true,
+            asNavFor: '.slider-nav',
+            adaptiveHeight: true,
+            speed: 800,
+            cssEase: 'ease-in-out',
+            infinite: true
+        });
+
+        $('.slider-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: false,
+            centerMode: true,
+            focusOnSelect: true,
+            adaptiveHeight: true,
+            speed: 800,
+            cssEase: 'ease-in-out',
+            infinite: true
+        });
+
+        $('.slider-for').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+            $('.slider-nav .slick-slide').removeClass('slick-current');
+            $('.slider-nav .slick-slide[data-slick-index=' + nextSlide + ']').addClass('slick-current');
+        });
+
+        $('.slider-nav .slick-slide').on('click', function() {
+            var index = $(this).data('slick-index');
+            $('.slider-for').slick('slickGoTo', index);
+        });
+    });
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.slider-for img');
+            const navSlides = document.querySelectorAll('.nav-slide');
+        
+            navSlides.forEach((navSlide, index) => {
+                navSlide.addEventListener('click', () => {
+                    // Remove active class from all slides
+                    slides.forEach(slide => slide.classList.remove('active'));
+                    navSlides.forEach(nav => nav.classList.remove('active'));
+        
+                    // Add active class to clicked nav slide and corresponding main slide
+                    slides[index].classList.add('active');
+                    navSlide.classList.add('active');
+                });
+            });
+        
+            // Set the first slide as active by default
+            slides[0].classList.add('active');
+            navSlides[0].classList.add('active');
+        });
+</script>
+</body>
+</html>

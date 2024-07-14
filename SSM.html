@@ -1,160 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Project 1 - Responsive Web Design</title>
-    <meta name="keywords" content="Responsive Web Design, Project, Pankaj Meharchandani">
-    <meta name="description" content="Details of the Responsive Web Design project by Pankaj Meharchandani.">
-    <meta name="author" content="Pankaj Meharchandani">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,800' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/jquery.fullPage.css">
-    <link rel="stylesheet" href="css/templatemo-style.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
-    <link rel="icon" href="images/pfav1.png" type="image/png">
-    <style>
-        
-        .section h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-        .section p {
-            font-size: 1.1em;
-            line-height: 1.6;
-        }
-
-        .gallery-container {
-            padding: 0px 0;
-        }
-        
-        .gallery-title {
-            text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #ffffff;
-            font-family: 'Arial', sans-serif;
-        }
-        
-        .slider-for img, .slider-nav .nav-slide img {
-            width: 100%;
-            border-radius: 15px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .slider-for img:hover, .slider-nav .nav-slide img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        }
-        
-        .slider-for {
-            position: relative;
-            overflow: hidden;
-            height: 400px;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .gallery-image {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain; /* Adjust to 'cover' if you prefer images to cover the entire container */
-            transition: opacity 0.5s, transform 0.5s;
-            opacity: 0;
-            position: relative;
-        }
-        
-        .gallery-image.active {
-            opacity: 1;
-        }
-        .slider-for img {
-            position: absolute;
-            top: 0;
-            left: 100%;
-            opacity: 0;
-            transition: left 0.5s, opacity 0.5s;
-        }
-        
-        .slider-for img.active {
-            left: 0;
-            opacity: 1;
-        }
-        
-        .slider-nav {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-        }
-        
-        .nav-slide {
-            cursor: pointer;
-            border-radius: 15px;
-            overflow: hidden;
-            width: 100px;
-            height: 70px;
-        }
-        
-        .nav-slide img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .nav-slide.active img {
-            border: 3px solid #ff4081;
-        }
-        
-        /* animations */
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
+    <head>
+        <meta charset="utf-8">
+        <title>Student Schedule Management - Android App</title>
+        <meta name="keywords" content="Android App, Student Schedule Management, Pankaj Meharchandani">
+        <meta name="description" content="Details of the Student Schedule Management Android App by Pankaj Meharchandani.">
+        <meta name="author" content="Pankaj Meharchandani">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,800' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/jquery.fullPage.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+        <link rel="icon" href="images/pfav1.png" type="image/png">
+        <style>
+            .section h2 {
+                font-size: 2.5em;
+                margin-bottom: 20px;
             }
-            40% {
-                transform: translateY(-30px);
+            .section p {
+                font-size: 1.1em;
+                line-height: 1.6;
             }
-            60% {
-                transform: translateY(-15px);
+    
+            .gallery-container {
+                padding: 0px 0;
             }
-        }
-        
-        .wow.bounce {
-            animation: bounce 2s;
-        }
-        
-        /* Media queries for responsiveness */
-        @media (max-width: 768px) {
+            
             .gallery-title {
-                font-size: 2em;
+                text-align: center;
+                font-size: 2.5em;
+                margin-bottom: 20px;
+                color: #ffffff;
+                font-family: 'Arial', sans-serif;
             }
-        
+            
+            .slider-for img, .slider-nav .nav-slide img {
+                width: 100%;
+                border-radius: 15px;
+                transition: transform 0.3s, box-shadow 0.3s;
+            }
+            
+            .slider-for img:hover, .slider-nav .nav-slide img:hover {
+                transform: scale(1.05);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            }
+            
+            .slider-for {
+                position: relative;
+                overflow: hidden;
+                height: 400px;
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .gallery-image {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+                transition: opacity 0.5s, transform 0.5s;
+                opacity: 0;
+                position: relative;
+            }
+            
+            .gallery-image.active {
+                opacity: 1;
+            }
+            .slider-for img {
+                position: absolute;
+                top: 0;
+                left: 100%;
+                opacity: 0;
+                transition: left 0.5s, opacity 0.5s;
+            }
+            
+            .slider-for img.active {
+                left: 0;
+                opacity: 1;
+            }
+            
             .slider-nav {
-                gap: 5px;
+                display: flex;
+                justify-content: center;
+                gap: 10px;
             }
-        
+            
             .nav-slide {
-                width: 70px;
-                height: 50px;
+                cursor: pointer;
+                border-radius: 15px;
+                overflow: hidden;
+                width: 100px;
+                height: 70px;
             }
-        }
-    </style>
-</head>
+            
+            .nav-slide img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            
+            .nav-slide.active img {
+                border: 3px solid #ff4081;
+            }
+            
+            /* animations */
+            @keyframes bounce {
+                0%, 20%, 50%, 80%, 100% {
+                    transform: translateY(0);
+                }
+                40% {
+                    transform: translateY(-30px);
+                }
+                60% {
+                    transform: translateY(-15px);
+                }
+            }
+            
+            .wow.bounce {
+                animation: bounce 2s;
+            }
+            
+            /* Media queries for responsiveness */
+            @media (max-width: 768px) {
+                .gallery-title {
+                    font-size: 2em;
+                }
+            
+                .slider-nav {
+                    gap: 5px;
+                }
+            
+                .nav-slide {
+                    width: 70px;
+                    height: 50px;
+                }
+            }
+        </style>
+    </head>
 <body>
-<div id="fullpage">
-    <!-- start header -->
-    <header class="section">
+    <div id="fullpage">
+       <!-- start header -->
+       <header class="section">
         <div class="container">
             <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8 wow fadeIn" data-wow-delay="0.9s">
-                    <h1>Project 1: Responsive Web Design</h1>
+                <div class="col-md-12 wow fadeIn" data-wow-delay="0.9s" style="text-align: center;">
+                    <h1>Student Schedule Management - Android App</h1>
+                    <img src="images/SSMlogo.png" alt="Project Logo" class="project-logo">
                     <p>Details of the project and its key features.</p>
+                    <p class="project-link">
+                        <a href="https://www.figma.com/community/file/1205785804657063885" target="_blank">View on Figma</a> |
+                        <a href="https://github.com/pankajmeharchandani/student-schedule-management" target="_blank">View Project on GitHub</a>
+                    </p>
                 </div>
-                <div class="col-md-2"></div>
             </div>
         </div>
     </header>
@@ -171,22 +171,22 @@
             <div class="row">
                 <div class="col-md-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.9s">
                     <h4>Project Description</h4>
-                    <p>This project involves designing and developing a responsive web application that ensures a smooth and consistent user experience across all devices and screen sizes. The primary focus is on a mobile-first approach, optimizing performance, and creating an intuitive interface.</p>
+                    <p>This Android app's UI/UX is redesigned from scratch and developed as well. It is an open-source contribution to GitHub. The application is used to manage lecture timetables, project deadlines, and exam schedules for students. More than 15 active users are using this application, including three college professors.</p>
                 </div>
                 <div class="col-md-6 col-xs-12 wow fadeInRight" data-wow-delay="0.9s">
-                    <span>HTML5 <small>90%</small></span>
+                    <span>Java <small>90%</small></span>
                     <div class="progress">
                         <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
                     </div>
-                    <span>CSS3 <small>85%</small></span>
+                    <span>XML <small>85%</small></span>
                     <div class="progress">
                         <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
                     </div>
-                    <span>JavaScript <small>80%</small></span>
+                    <span>SQLite <small>80%</small></span>
                     <div class="progress">
                         <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
                     </div>
-                    <span>Bootstrap <small>75%</small></span>
+                    <span>UI/UX Design <small>75%</small></span>
                     <div class="progress">
                         <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
                     </div>
@@ -209,10 +209,10 @@
                     <p>The development process for this project involved several key steps:</p>
                     <ol>
                         <li><strong>Research & Planning:</strong> Understanding user needs and defining project requirements.</li>
-                        <li><strong>Design:</strong> Creating wireframes and mockups, focusing on a mobile-first approach.</li>
-                        <li><strong>Development:</strong> Implementing the design using HTML5, CSS3, JavaScript, and Bootstrap.</li>
-                        <li><strong>Testing:</strong> Conducting usability tests and optimizing for different devices and browsers.</li>
-                        <li><strong>Deployment:</strong> Deploying the project to a live server and monitoring performance.</li>
+                        <li><strong>Design:</strong> Creating wireframes and mockups, focusing on user-centric design principles.</li>
+                        <li><strong>Development:</strong> Implementing the design using Java, XML, and SQLite.</li>
+                        <li><strong>Testing:</strong> Conducting usability tests and optimizing for different Android devices and versions.</li>
+                        <li><strong>Deployment:</strong> Deploying the app to the Google Play Store and monitoring user feedback.</li>
                     </ol>
                 </div>
             </div>
@@ -220,52 +220,53 @@
     </div>
     <!-- end process -->
 
-    <!-- start features -->
-    <div id="features" class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 wow bounce">
-                    <h2>Key Features</h2>
+
+   <!-- start features -->
+   <div id="features" class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 wow bounce">
+                <h2>Key Features</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="media">
+                    <div class="media-left">
+                        <i class="fa fa-calendar"></i>
+                    </div>
+                    <div class="media-body">
+                        <h3 class="media-heading">Timetable Management</h3>
+                        <p>Allows students to manage and organize their lecture schedules efficiently.</p>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="media">
-                        <div class="media-left">
-                            <i class="fa fa-laptop"></i>
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">Responsive Design</h3>
-                            <p>Ensures the website is fully responsive, adapting seamlessly to any device size or resolution.</p>
-                        </div>
+            <div class="col-md-4 col-xs-12 wow fadeInUp" data-wow-delay="0.9s">
+                <div class="media">
+                    <div class="media-left">
+                        <i class="fa fa-tasks"></i>
+                    </div>
+                    <div class="media-body">
+                        <h3 class="media-heading">Project Deadlines</h3>
+                        <p>Helps students keep track of project deadlines and submit work on time.</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="media">
-                        <div class="media-left">
-                            <i class="fa fa-link"></i>
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">UI/UX Design</h3>
-                            <p>Focuses on creating an intuitive user interface and enhancing user experience through thoughtful design.</p>
-                        </div>
+            </div>
+            <div class="col-md-4 col-xs-12 wow fadeInUp" data-wow-delay="1.2s">
+                <div class="media">
+                    <div class="media-left">
+                        <i class="fa fa-pencil"></i>
                     </div>
-                </div>
-                <div class="col-md-4 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="media">
-                        <div class="media-left">
-                            <i class="fa fa-code"></i>
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">Modern Technologies</h3>
-                            <p>Utilizes the latest web technologies like HTML5, CSS3, JavaScript, and Bootstrap for development.</p>
-                        </div>
+                    <div class="media-body">
+                        <h3 class="media-heading">Exam Schedules</h3>
+                        <p>Provides a clear overview of upcoming exams and helps in planning study time.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- end features -->
+</div>
+<!-- end features -->
 
   <!-- start gallery -->
 <div id="gallery" class="gallery-container section">

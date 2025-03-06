@@ -1,253 +1,285 @@
-<!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Pankaj Meharchandani Portfolio website</title>
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7004655890059969"
-     crossorigin="anonymous"></script>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Pankaj Meharchandani</title>
+    <meta name="keywords" content="Pankaj Meharchandani, UI/UX Designer, Android Developer">
+    <meta name="description" content="Pankaj Meharchandani's professional profile showcasing experience in UI/UX design and Android development.">
+    <meta name="author" content="Pankaj Meharchandani">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,700,800" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="icon" href="images/pfav.png" type="image/png">
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Raleway', sans-serif;
+        }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        .section {
+            padding: 60px 0;
+            text-align: center;
+        }
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+        h1, h2, h3, h4, p {
+            margin-bottom: 20px;
+        }
 
-							<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo"><strong>Pankaj Meharchandani</strong> </a>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
-									</ul>
-								</header>
+        .portfolio-thumb img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
 
-							<!-- Banner -->
-								<section id="banner">
-									<div class="content">
-										<header>
-											<h1>Hi, I’m Pankaj Meharchandani<br />
-											<p>A Ui Designer & an Android Developer</p>
-										</header>
-										<p>Greetings! I am Pankaj Meharchandani, a creative Ui/Ux designer with a passion for crafting engaging mobile applications. My expertise lies in conducting thorough research to understand the needs of users and translating that understanding into stunning Ui designs.</p>
-										<ul class="actions">
-											<li><a href="#" class="button big">Learn More</a></li>
-										</ul>
-									</div>
-									<span class="image object">
-										<img src="images/pic10.jpg" alt="" />
-									</span>
-								</section>
+        .portfolio-thumb:hover img {
+            transform: scale(1.05);
+        }
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Erat lacinia</h2>
-									</header>
-									<div class="features">
-										<article>
-											<span class="icon fa-gem"></span>
-											<div class="content">
-												<h3>Portitor ullamcorper</h3>
-												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon solid fa-paper-plane"></span>
-											<div class="content">
-												<h3>Sapien veroeros</h3>
-												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon solid fa-rocket"></span>
-											<div class="content">
-												<h3>Quam lorem ipsum</h3>
-												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon solid fa-signal"></span>
-											<div class="content">
-												<h3>Sed magna finibus</h3>
-												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											</div>
-										</article>
-									</div>
-								</section>
+        .portfolio-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Ipsum sed dolor</h2>
-									</header>
-									<div class="posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-											<h3>Interdum aenean</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-											<h3>Nulla amet dolore</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-											<h3>Tempus ullamcorper</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3>Sed etiam facilis</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3>Feugiat lorem aenean</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-											<h3>Amet varius aliquam</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-									</div>
-								</section>
+        .portfolio-thumb:hover .portfolio-overlay {
+            opacity: 1;
+        }
 
-						</div>
-					</div>
+        @media (max-width: 768px) {
+            .col-md-4, .col-md-6 {
+                margin-bottom: 20px;
+            }
 
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
+            h1 {
+                font-size: 24px;
+            }
 
-							<!-- Search -->
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>
+            h2 {
+                font-size: 20px;
+            }
 
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li><a href="index.html">Homepage</a></li>
-										<li><a href="generic.html">Generic</a></li>
-										<li><a href="elements.html">Elements</a></li>
-										<li>
-											<span class="opener">Submenu</span>
-											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Etiam Dolore</a></li>
-										<li><a href="#">Adipiscing</a></li>
-										<li>
-											<span class="opener">Another Submenu</span>
-											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Maximus Erat</a></li>
-										<li><a href="#">Sapien Mauris</a></li>
-										<li><a href="#">Amet Lacinia</a></li>
-									</ul>
-								</nav>
+            p {
+                font-size: 16px;
+            }
+        }
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Ante interdum</h2>
-									</header>
-									<div class="mini-posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-									</div>
-									<ul class="actions">
-										<li><a href="#" class="button">More</a></li>
-									</ul>
-								</section>
+        @media (max-width: 576px) {
+            .col-md-8, .col-md-4, .col-md-6 {
+                margin-bottom: 20px;
+            }
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Get in touch</h2>
-									</header>
-									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-										<li class="icon solid fa-phone">(000) 000-0000</li>
-										<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
-										Nashville, TN 00000-0000</li>
-									</ul>
-								</section>
+            .portfolio-thumb img {
+                border-radius: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="fullpage">
+    <!-- start home -->
+    <div id="home" class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 wow fadeIn" data-wow-delay="0.9s">
+                    <h3>Creative and Experienced</h3>
+                    <h1>Pankaj Meharchandani</h1>
+                    <h2 class="rotate">UI/UX DESIGNER, ANDROID DEVELOPER</h2>
+                    <p>Dedicated UI/UX Designer and Android Developer with practical experience gained through internships and personal projects. Proficient in Figma, Adobe Creative Suite, and Android Studio.</p>
+                    <a href="#work" class="btn btn-default smoothScroll wow fadeInUp" data-wow-delay="1s">Explore My Work</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end home -->
 
-							<!-- Footer -->
-								<footer id="footer">
-									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-								</footer>
+    <!-- start work -->
+    <div id="work" class="section">
+        <div class="container">
+            <h2 class="wow bounce">WHAT I DO</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="media">
+                        <div class="media-object media-left">
+                            <i class="fa fa-laptop"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Responsive Design</h3>
+                            <p>I design responsive, mobile-first websites and applications that provide a seamless user experience across all devices.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="media">
+                        <div class="media-object media-left">
+                            <i class="fa fa-link"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">UI/UX Design</h3>
+                            <p>With a strong focus on usability, I create intuitive interfaces that enhance user satisfaction and drive engagement.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="media">
+                        <div class="media-object media-left">
+                            <i class="fa fa-code"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Android Development</h3>
+                            <p>Proficient in Android development using Java and modern tools like Android Studio to build efficient and user-friendly apps.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end work -->
 
-						</div>
-					</div>
+    <!-- start about -->
+    <div id="about" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-11 wow fadeInLeft" data-wow-delay="0.9s">
+                    <h2>ABOUT ME</h2>
+                    <h4>UI/UX DESIGNER &AMP; ANDROID DEVELOPER</h4>
+                    <p>I am a passionate UI/UX designer and Android developer with hands-on experience in creating user-centric designs and developing robust Android applications. My journey in the field includes internships, open-source contributions, and personal projects.</p>
+                    <p>In my recent roles, I led design projects and collaborated closely with teams to deliver high-quality and user-friendly interfaces.</p>
+                </div>
+                <div class="col-md-6 col-xs-11 wow fadeInRight" data-wow-delay="0.9s">
+                    <span class="text-top">UI/UX Design <small>95%</small></span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
+                    </div>
+                    <span>Android Development <small>85%</small></span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+                    </div>
+                    <span>Web Design <small>75%</small></span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+                    </div>
+                    <span>HTML5 &AMP; CSS3 <small>90%</small></span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end about -->
 
-			</div>
+    <!-- start portfolio -->
+    <div id="portfolio" class="section">
+        <div class="container">
+            <h2 class="wow bounce">PORTFOLIO</h2>
+            <div class="row">
+                <div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+                    <div class="portfolio-thumb">
+                        <a href="SSM.html">
+                            <img src="images/SSM.png" class="img-responsive" alt="Student Schedule Management - Android App">
+                            <div class="portfolio-overlay">
+                                <h4>Student Schedule Management</h4>
+                                <h5>Android App</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+                    <div class="portfolio-thumb">
+                        <a href="Calmify.html">
+                            <img src="images/Calmify.png" class="img-responsive" alt="Calmify - Android App">
+                            <div class="portfolio-overlay">
+                                <h4>Calmify</h4>
+                                <h5>Android App</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+                    <div class="portfolio-thumb">
+                        <a href="ProfileWebsite.html">
+                            <img src="images/ProfileWebsite.png" class="img-responsive" alt="Personal Portfolio Website">
+                            <div class="portfolio-overlay">
+                                <h4>Personal Portfolio</h4>
+                                <h5>Web Design</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end portfolio -->
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    <!-- start contact -->
+    <div id="contact" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <address>
+                        <p class="contact-title">CONTACT ME</p>
+                        <p><i class="fa fa-phone"></i><a href="tel:+917000221437" target="_blank">+91-7000221437&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></p>
+                        <p><i class="fa fa-envelope-o"></i> <a href="mailto:pankajmeharchandani@gmail.com" target="_blank">pankajmeharchandani@gmail.com</a></p>
+                        <p><i class="fa fa-linkedin"></i> <a href="https://linkedin.com/in/pankaj-meharchandani-2679b71b8" target="_blank">pankaj-meharchandani-2679b71b8</a></p>
+                    </address>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-10 wow fadeInUp" data-wow-delay="0.6s">
+                    <form role="form" method="post" action="#">
+                        <input name="name" type="text" class="form-control" id="name" placeholder="Your Name">
+                        <input name="email" type="email" class="form-control" id="email" placeholder="Your Email">
+                        <textarea name="message" rows="5" class="form-control" id="message" placeholder="Your Message"></textarea>
+                        <input name="send" type="submit" class="form-control" id="send" value="SEND ME">
+                    </form>
+                </div>
+                <div class="col-md-1 col-sm-1"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end contact -->
 
-	</body>
+    <!-- start footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 wow fadeIn" data-wow-delay="0.9s">
+                <p>&copy; 2024 Pankaj Meharchandani</p>
+                <hr>
+                <ul class="social-icon">
+                    <li><a href="https://www.behance.net/pankajmeharch?log_shim_removal=1" class="fa fa-behance"></a></li>
+                    <li><a href="https://www.linkedin.com/in/pankaj-meharchandani-2679b71b8/" class="fa fa-linkedin"></a></li>
+                    <li><a href="https://pankajmeharchandani.myportfolio.com/" class="fa fa-briefcase"></a></li>
+                    <li><a href="https://www.figma.com/@pankaj_m" class="fa fa-figma"></a></li>
+                    <li><a href="https://dribbble.com/Killmonger_007" class="fa fa-dribbble"></a></li>
+                    <li><a href="https://github.com/Pankaj-Meharchandani" class="fa fa-github"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end footer -->
+
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fullPage.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.simple-text-rotator.js"></script>
+<script src="js/custom.js"></script>
+</body>
 </html>
